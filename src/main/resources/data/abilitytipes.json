@@ -1,0 +1,20 @@
+[
+	{
+		"name":"general"
+	},
+	{
+		"name":"agility"
+	},
+	{
+		"name":"pass"
+	},
+	{
+		"name":"strength"
+	},
+	{
+		"name":"mutation"
+	},
+	{
+		"name":"extraordinary"
+	}
+]
