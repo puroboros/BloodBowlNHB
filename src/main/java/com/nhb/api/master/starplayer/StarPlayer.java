@@ -3,16 +3,21 @@ package com.nhb.api.master.starplayer;
 import java.util.List;
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.DBRef;
 
 import com.nhb.api.master.Stats;
+import com.nhb.api.master.ability.Ability;
+import com.nhb.api.master.race.Race;
 
 public class StarPlayer {
 	@Id
 	private String id;
-	private List<String> races;
+	@DBRef
+	private List<Race> races;
 	private String name;
-	private Integer cost;	
-	private List<Integer> baseAbilities;
+	private Integer cost;
+	@DBRef
+	private List<Ability> baseAbilities;
 	private Stats stats;
 	public String getId() {
 		return id;
@@ -20,10 +25,10 @@ public class StarPlayer {
 	public void setId(String id) {
 		this.id = id;
 	}
-	public List<String> getRaces() {
+	public List<Race> getRaces() {
 		return races;
 	}
-	public void setRaces(List<String> races) {
+	public void setRaces(List<Race> races) {
 		this.races = races;
 	}
 	public String getName() {
@@ -38,10 +43,10 @@ public class StarPlayer {
 	public void setCost(Integer cost) {
 		this.cost = cost;
 	}
-	public List<Integer> getBaseAbilities() {
+	public List<Ability> getBaseAbilities() {
 		return baseAbilities;
 	}
-	public void setBaseAbilities(List<Integer> baseAbilities) {
+	public void setBaseAbilities(List<Ability> baseAbilities) {
 		this.baseAbilities = baseAbilities;
 	}
 	public Stats getStats() {
