@@ -5,7 +5,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule} from './app-routing.module';
-
 import { HomeComponent } from './pages/app.pages';
 
 
@@ -14,13 +13,14 @@ import { HomeComponent } from './pages/app.pages';
 
 @NgModule({
   imports: [
+    BrowserModule,
     FormsModule,
     AppRoutingModule,
     HttpModule
   ],
   declarations: [AppComponent, HomeComponent],
   bootstrap: [AppComponent],
-  providers: []
+  providers: [ ]
 
 })
 export class AppModule { }
