@@ -1,0 +1,7 @@
+system-config.js*
+app/**/*.js
+app/**/*.map
+node_modules 
+aot/*
+dist/*
+yarn.lock
