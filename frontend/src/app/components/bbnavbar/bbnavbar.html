@@ -1,0 +1,10 @@
+<div class="bbnav" [ngClass]="toggle">
+    <div (click)="toggle?toggle='':toggle='topsmall'" class="title">
+        <h1>NHB</h1>
+    </div>
+    <nav>
+        <a routerLink="/home" routerLinkActive="active">{{'HOME' | translate}}</a>
+        <a routerLink="/profile" routerLinkActive="active">{{'PROFILE' | translate}}</a>
+        <a routerLink="/library" routerLinkActive="active">{{'LIBRARY' | translate}}</a>
+    </nav>
+  </div>

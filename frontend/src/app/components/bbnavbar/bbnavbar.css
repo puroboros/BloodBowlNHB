@@ -1,0 +1,98 @@
+h1 {
+  font-size: 1.2em;
+  color: #999;
+  margin-bottom: 0;
+  text-align:center;
+  margin-top: 0px;
+}
+nav a {
+  padding: 5px 10px;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+  background-color: #eee;
+  border-radius: 4px;
+}
+nav a:visited, a:link {
+  color: #607D8B;
+}
+nav a:hover {
+  color: #039be5;
+  background-color: #CFD8DC;
+}
+nav a.active {
+  color: #039be5;
+}
+
+.selected {
+    background-color: #CFD8DC !important;
+    color: white;
+  }
+  
+
+.bbnav{
+    padding-left:15px;
+    text-align: center;
+}
+
+.bbnav, :host{
+    position:static;
+    width:100%;
+}
+.bbnav nav{
+    text-align:center;
+    
+}
+.bbnav.topsmall nav{
+    display:none;
+}
+.title{
+        margin-left: auto;
+        margin-right:auto;
+        cursor:pointer;
+        display:inline-block;
+        border: 1px;
+        border-style:solid;
+    }
+
+@media(min-width: 992px){  
+    .bbnav{
+        text-align: left;
+    }  
+    .bbnav, :host{
+        height:100%;
+        float:left;
+        overflow:auto;
+        width:200px;
+    }
+    .title{
+        border: none;
+        display:block;
+        cursor:auto;
+    }
+    .bbnav.topsmall nav{
+        display:block;
+    }
+    h1 {
+        text-align:center;
+    }
+    nav a {
+        text-align: left;
+        padding: 5px 10px;
+        text-decoration: none;
+        margin-top: 10px;
+        display: block;
+        background-color: #eee;
+        border-radius: 4px;
+    }
+}
+
+  /* Small devices (tablets, 768px and up) */
+/*@media (min-width: @screen-sm-min) { ... }
+
+/* Medium devices (desktops, 992px and up) */
+/*@media (min-width: @screen-md-min) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+/*@media (min-width: @screen-lg-min) { ... }
+*/
