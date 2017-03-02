@@ -1,10 +1,42 @@
 [
-	{
-		"name":"dodge",
-		"description":"wow"
+{
+		"name":"catch",
+		"description":"Can repeat a missed catch roll"
 	},
 	{
-		"name": "jump",
-		"descrition":"high"
+		"name":"diving_tackle",
+		"description":"Prone to -2 dodge"
+	},
+	{
+		"name":"dodge",
+		"description":"Repeat dodge, evades 5"
+	},
+	{
+		"name":"dump_off",
+		"description":"Passes when going to be hit"
+	},
+	{
+		"name": "jump_up",
+		"descrition":"agility+2 to no blitz, raises free"
+	},
+	{
+		"name":"side_step",
+		"description":"can chose where to move when hit"
+	},
+	{
+		"name":"sneaky_git",
+		"description":"not ejected if no pass armor"
+	},
+	{
+		"name":"sprint",
+		"description":"1 extra sprint chance"
+	},
+	{
+		"name":"sure_feet",
+		"description":"repeat missed rolls to sprint"
+	},
+	{
+		"name":"leap",
+		"description":"agility roll to up to 2 squares"
 	}
 ]

@@ -31,4 +31,7 @@ nav a.active {
     background-color: #CFD8DC !important;
     color: white;
   }
-  
+  :host{
+    height:100%;
+    width:100%;
+  }

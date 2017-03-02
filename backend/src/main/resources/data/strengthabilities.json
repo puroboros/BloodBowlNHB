@@ -1,10 +1,42 @@
 [
+{
+		"name":"break_tackle",
+		"description":"Once per turn may use str instead of agility to dodge"
+	},
 	{
-		"name":"mighty blow",
+		"name":"grab",
+		"description":"Can a move the enemy when hit to any free cell"
+	},
+	{
+		"name":"guard",
+		"description":"Always help at tackling"
+	},
+	{
+		"name":"juggernaut",
+		"description":"both down = push, no fend, stand firm nor wrestle"
+	},
+	{
+		"name":"mighty_blow",
 		"description":"+1 to AR or Injury"
 	},
 	{
-		"name": "break tackle",
-		"descrition":"roar"
+		"name":"multiple_block",
+		"description":"can hit to any adjacent at once, but they have +2 str"
+	},
+	{
+		"name":"pilling_on",
+		"description":"prone to repeat injury or armor check"
+	},
+	{
+		"name":"stand_firm",
+		"description":"can't be displaced"
+	},
+	{
+		"name":"strong_arm",
+		"description":"+1 to pass"
+	},
+	{
+		"name":"thick_skull",
+		"description":"8 is not KO"
 	}
 ]

@@ -1,10 +1,26 @@
 [
 	{
-		"name":"pass",
-		"description":"you don't fall when a result of both hit"
+		"name": "accurate",
+		"description": "+1 to pass"
+	},
+	{
+		"name":"hail_mary_pass",
+		"description":"Can pass anywhere"
+	},
+	{
+		"name": "pass",
+		"description": "repeat missed attempt to pass once"
 	},
 	{
 		"name": "leader",
-		"descrition":"blablabla"
+		"descrition": "+1 reroll"
+	},
+	{
+		"name":"safe_throw",
+		"description":"agility throw to not intercepted, only natural 1 fumble"
+	},
+	{
+		"name":"nerves_of_steel",
+		"description":"not affected by zones when passsing, catching or intercepting"
 	}
 ]

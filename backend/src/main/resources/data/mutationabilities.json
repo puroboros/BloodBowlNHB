@@ -1,10 +1,42 @@
 [
 	{
-		"name":"claws",
-		"description":"AR 7 (or less) everyone"
+		"name": "big_hand",
+		"description": "Not influenced by weather nor enemy zones to pick the ball"
 	},
 	{
-		"name": "2 heads",
-		"descrition":"blablabla"
+		"name": "claws",
+		"description": "AR 7 (or less) everyone"
+	},
+	{
+		"name":"disturbing_presence",
+		"description":"-1 to pass and intercept and catch at 3 cells radius"
+	},
+	{
+		"name":"extra_arms",
+		"description":"+1 to pickup, intercept and catch"
+	},
+	{
+		"name":"foul_appearance",
+		"description":"1 in 1d6 don't hit it"
+	},
+	{
+		"name":"horns",
+		"description":"+1 str when blitzing"
+	},
+	{
+		"name":"prehensile_tail",
+		"description":"-1 to dodge for enemies"
+	},
+	{
+		"name":"tentacles",
+		"description":"if enemies try to leave zone, str confronted check"
+	},
+	{
+		"name": "two_heads",
+		"descrition": "+1 dodge"
+	},
+	{
+		"name":"very_long_legs",
+		"description":"+1 to leap and intercept, disables safe throw "
 	}
 ]

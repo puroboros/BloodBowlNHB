@@ -1,31 +1,25 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
- declare var sergio: any;
 @Component({
   selector: 'my-app',
   template: `
-  <div class="container">
-    <h1>NHB</h1>
-    
-    <nav>
-    <a routerLink="/home" routerLinkActive="active">Home</a>
-    </nav>
+    <bbnav></bbnav>
+  
+  <div style="float:left">
+  <div class="container-fluid">
+    <router-outlet></router-outlet>
   </div>
-  <router-outlet></router-outlet>
+  </div>
   `,
   styleUrls: ['./app.component.css']
 })
 
 export class AppComponent {
- 
-
- 
-constructor(){
+  constructor(private translate: TranslateService) {
+    this.translate.addLangs(["es", "en"]);
+    this.translate.setDefaultLang('es');
+    let browserLang: string = this.translate.getBrowserLang();
+    this.translate.use(browserLang.match(/es|en/) ? browserLang : 'es');
+  }
 }
- 
-
-}
-
-
-
-

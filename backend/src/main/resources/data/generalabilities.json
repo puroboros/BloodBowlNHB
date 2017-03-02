@@ -4,7 +4,55 @@
 		"description":"you don't fall when a result of both hit"
 	},
 	{
-		"name": "struggle",
-		"descrition":"blablabla"
+		"name":"dauntless",
+		"description":"you don't fall when a result of both hit"
+	},
+	{
+		"name":"dirty_player",
+		"description":"+1 when faulting"
+	},
+	{
+		"name":"fend",
+		"description":"Enemies can't follow when hit"
+	},
+	{
+		"name":"frenzy",
+		"description":"Can hit twice the same enemy"
+	},
+	{
+		"name":"kick",
+		"description":"ball bounces 0-3 only"
+	},
+	{
+		"name":"kick_off_return",
+		"description":"move up to 3 squares when going to receive a kick ball"
+	},
+	{
+		"name":"pass_block",
+		"description":"move up to 3 squares to intercept"
+	},
+	{
+		"name":"pro",
+		"description":"4-6 in d6 repeat"
+	},
+	{
+		"name":"shadowing",
+		"description":"can follow a player when moves away"
+	},
+	{
+		"name":"strip_ball",
+		"description":"removes ball if moves the players "
+	},
+	{
+		"name":"sure_hands",
+		"description":"repeat pitch rolls, can't be stolen'"
+	},
+	{
+		"name":"tackle",
+		"description":"ignores dodge skill"
+	},
+	{
+		"name": "wrestle",
+		"descrition":"block prones both players but not lose turn"
 	}
 ]

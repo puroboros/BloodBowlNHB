@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './pages/app.pages';
-
+import { HomeComponent } from './app.pages';
+import { ProfileComponent } from './app.pages';
 
 
 const routes: Routes = [
@@ -12,11 +12,14 @@ const routes: Routes = [
   },{
     path: 'home',
     component:HomeComponent
-  }/*,
-  { friendly reminder for lazy load
-    path: 'location',
-    loadChildren: './pages/+location/location.module#LocationModule'          
-  }*/
+  },{
+    path: 'profile',
+    component:ProfileComponent
+  },
+  {
+    path: 'library',
+    loadChildren: './+library/library.module#LibraryModule'          
+  }
 ]
 
 @NgModule({

@@ -1,8 +1,65 @@
 [
 	{
+		"name":"amazon"
+	},
+	{
+		"name":"chaos"
+	},
+	{
+		"name":"chaos_dwarf"
+	},
+	{
+		"name":"dark_elf"
+	},
+	{
+		"name":"dwarf"
+	},
+	{
+		"name":"elf"
+	},
+	{
+		"name":"goblin"
+	},
+	{
+		"name":"halfling"
+	},
+	{
+		"name":"high_elf"
+	},
+	{
+		"name":"human"
+	},
+	{
+		"name":"khemri"
+	},
+	{
+		"name":"lizardman"
+	},
+	{
+		"name":"necromantic"
+	},
+	{
+		"name":"norse"
+	},
+	{
 		"name":"nurgle"
 	},
 	{
-		"name": "undead"
+		"name":"ogre"
+	},
+	{
+		"name":"orc"
+	},
+	{
+		"name":"skaven"
+	},
+	{
+		"name":"undead"
+	},
+	{
+		"name": "vampire"
+	},
+	{
+		"name":"wood_elf"
 	}
 ]
