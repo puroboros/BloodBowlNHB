@@ -1,42 +1,42 @@
 [
-{
-		"name":"catch",
-		"description":"Can repeat a missed catch roll"
+	{
+		"name": "catch",
+		"description": "Can repeat a missed catch roll"
 	},
 	{
-		"name":"diving_tackle",
-		"description":"Prone to -2 dodge"
+		"name": "diving_tackle",
+		"description": "Prone to -2 dodge"
 	},
 	{
-		"name":"dodge",
-		"description":"Repeat dodge, evades 5"
+		"name": "dodge",
+		"description": "Repeat dodge, evades 5"
 	},
 	{
-		"name":"dump_off",
-		"description":"Passes when going to be hit"
+		"name": "dump_off",
+		"description": "Passes when going to be hit"
 	},
 	{
 		"name": "jump_up",
-		"descrition":"agility+2 to no blitz, raises free"
+		"description": "agility+2 to no blitz, raises free"
 	},
 	{
-		"name":"side_step",
-		"description":"can chose where to move when hit"
+		"name": "side_step",
+		"description": "can chose where to move when hit"
 	},
 	{
-		"name":"sneaky_git",
-		"description":"not ejected if no pass armor"
+		"name": "sneaky_git",
+		"description": "not ejected if no pass armor"
 	},
 	{
-		"name":"sprint",
-		"description":"1 extra sprint chance"
+		"name": "sprint",
+		"description": "1 extra sprint chance"
 	},
 	{
-		"name":"sure_feet",
-		"description":"repeat missed rolls to sprint"
+		"name": "sure_feet",
+		"description": "repeat missed rolls to sprint"
 	},
 	{
-		"name":"leap",
-		"description":"agility roll to up to 2 squares"
+		"name": "leap",
+		"description": "agility roll to up to 2 squares"
 	}
 ]

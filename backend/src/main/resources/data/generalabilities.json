@@ -53,6 +53,6 @@
 	},
 	{
 		"name": "wrestle",
-		"descrition":"block prones both players but not lose turn"
+		"description":"block prones both players but not lose turn"
 	}
 ]

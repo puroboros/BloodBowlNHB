@@ -1,14 +1,23 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { LibraryService } from './library.service';
+import { Skill } from './skill';
 @Component({
     selector: 'library',
     templateUrl: './library.html',
-    styleUrls:[ './library.css' ]/*,
-    providers: [???]*/
+    styleUrls:[ './library.css' ],
+    providers: [LibraryService]
 })
 
-export class LibraryComponent {
-    abilities: {name:string,description:string,type:string}[]= [{name:"dodge",description:"dodges",type:"agility"},
-    {name:"mighty blow", description:"+1", type:"strength"}, {name:"block", description:"blocks", type:"general"}];
+export class LibraryComponent implements OnInit{
+    abilities: Skill[];
+
+    constructor(private libraryService: LibraryService){}
+    
+    ngOnInit(){
+        this.libraryService.findAll().then( data =>{
+            this.abilities = data;
+        });
+    }
 }
 
 

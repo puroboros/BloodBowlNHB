@@ -1,9 +1,10 @@
 <div class="">
     <h1> Library </h1>
     <p>Here you can inspect basics of Bloodbowl.</p>
+    <h2> Skills</h2>
     <p-dataTable [value]="abilities">
         <p-column field="name" header="Ability"></p-column>
         <p-column field="description" header="Description"></p-column>
-        <p-column field="type" header="Type"></p-column>
+        <p-column field="abilityType.name" header="Type"></p-column>
     </p-dataTable>
 </div>

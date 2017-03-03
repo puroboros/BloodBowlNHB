@@ -13,7 +13,7 @@
 	},
 	{
 		"name": "leader",
-		"descrition": "+1 reroll"
+		"description": "+1 reroll"
 	},
 	{
 		"name":"safe_throw",

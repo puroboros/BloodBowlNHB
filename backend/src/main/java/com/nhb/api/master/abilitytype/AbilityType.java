@@ -6,6 +6,14 @@ public class AbilityType {
 	@Id
 	private String id;
 	private String name;
+	public AbilityType(){}
+	public AbilityType(String id, String name){
+		this.id = id;
+		this.name = name;
+	}
+	public AbilityType(String name){
+		this.name = name;
+	}
 	public String getId() {
 		return id;
 	}

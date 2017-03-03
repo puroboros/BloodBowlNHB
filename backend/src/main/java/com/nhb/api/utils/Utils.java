@@ -13,10 +13,25 @@ import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.util.ResourceUtils;
 
+import com.nhb.api.master.ability.Ability;
+import com.nhb.api.master.ability.AbilityService;
+import com.nhb.api.master.abilitytype.AbilityType;
+import com.nhb.api.master.abilitytype.AbilityTypeService;
+import com.nhb.api.master.race.RaceService;
+
 @Service
 public class Utils {
 	@Autowired
 	private MongoTemplate mongoTemplate;
+	
+	@Autowired
+	private RaceService raceService;
+	
+	@Autowired
+	private AbilityService abilityService;
+	
+	@Autowired
+	private AbilityTypeService abilityTypeService;
 
 	@PostConstruct
 	private void init() {
@@ -31,12 +46,26 @@ public class Utils {
 	private void insertRaces() {
 		JSONParser parser = new JSONParser();
 		try {
-			File file = ResourceUtils.getFile("src/main/resources/data/races.json");
+			File file = ResourceUtils.getFile("src/main/resources/data/abilitytipes.json");
 			Object obj = parser.parse(new FileReader(file));
 			JSONArray jsonArray = (JSONArray) obj;
 			for (Object ob : jsonArray) {
 				JSONObject job = (JSONObject) ob;
-				System.out.println(job.get("name"));
+				AbilityType abilityType = new AbilityType(job.get("name").toString());
+				abilityTypeService.add(abilityType);
+				System.out.println("adding: "+abilityType);
+				File abilityFile = ResourceUtils.getFile("src/main/resources/data/"+abilityType.getName()+"abilities.json");
+				Object abilitiesParser = parser.parse(new FileReader(abilityFile));
+				JSONArray abilitiesArray = (JSONArray) abilitiesParser;
+				for (Object ability : abilitiesArray) {
+					JSONObject abilityJSON = (JSONObject)ability;
+					Ability skill = new Ability();
+					skill.setAbilityType(abilityType);
+					skill.setName(abilityJSON.get("name").toString());
+					System.out.println("object: "+abilityJSON);
+					skill.setDescription(abilityJSON.get("description").toString());
+					abilityService.add(skill);
+				}
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
