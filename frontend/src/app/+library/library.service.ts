@@ -1,19 +1,26 @@
 import { Injectable, EventEmitter } from '@angular/core';
-import { Observable } from "rxjs/Rx";
+import { Observable } from 'rxjs/Rx';
 import { RestError } from '../models/rest-error';
-import { Http, Response } from '@angular/http';
-import { BASE_API_URL } from '../app.properties';
+import { Http, Response, RequestOptionsArgs } from '@angular/http';
 import { Skill } from './skill';
+import { environment } from '../../environments/environment';
 @Injectable()
 export class LibraryService{
-    private url: string = BASE_API_URL + 'api/v1/abilities';
+    private url =  environment.BASE_API_URL + 'api/v1/abilities';
+    private skills: Skill[];
     constructor(private http: Http) {
 
     }
 
+    findAll(): Promise<Skill[]> {
+        return this.http.get(this.url)
+            .map(this.extractData)
+            .catch(this.handleError).toPromise();
+    }
 
     private extractData(res: Response) {
-        let body = res.json();
+        const body = res.json();
+        console.log(JSON.stringify(body));
         return body || {};
     }
     private handleError(error: Response | any) {
@@ -26,14 +33,7 @@ export class LibraryService{
         } else {
             errMsg = error.message ? error.message : error.toString();
         }
-        console.error(errMsg);
+        // console.error(errMsg);
         return Observable.throw(errMsg);
     }
-
-    findAll(): Promise<Skill[]> {
-        return this.http.get(this.url)
-            .map(this.extractData)
-            .catch(this.handleError).toPromise();
-    }
-
 }

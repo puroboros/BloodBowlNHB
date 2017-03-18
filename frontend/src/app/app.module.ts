@@ -1,11 +1,12 @@
-import { NgModule } from '@angular/core';
-import { HttpModule, Http } from '@angular/http';
-import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { Logger, Options as LoggerOptions, Level as LoggerLevel  } from "angular2-logger/core";
+import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { Logger, Options as LoggerOptions, Level as LoggerLevel  } from 'angular2-logger/core';
+import { HttpModule, Http } from '@angular/http';
 
 import { AppComponent } from './app.component';
+
+
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './app.pages';
 import { ProfileComponent } from './app.pages';
@@ -19,7 +20,7 @@ export function HttpLoaderFactory(http: Http) {
 }
 
 @NgModule({
-  imports: [
+ imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule,
@@ -36,6 +37,5 @@ export function HttpLoaderFactory(http: Http) {
   declarations: [AppComponent, HomeComponent, ProfileComponent],
   bootstrap: [AppComponent],
   providers: [ Logger,  { provide: LoggerOptions, useValue: { level: LoggerLevel.INFO } } ]
-
 })
 export class AppModule { }

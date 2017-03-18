@@ -9,16 +9,16 @@ const routes: Routes = [
     path: '',
     redirectTo: '/home',
     pathMatch: 'full'
-  },{
+  }, {
     path: 'home',
-    component:HomeComponent
-  },{
+    component: HomeComponent
+  }, {
     path: 'profile',
-    component:ProfileComponent
+    component: ProfileComponent
   },
   {
     path: 'library',
-    loadChildren: './+library/library.module#LibraryModule'          
+    loadChildren: './+library/library.module#LibraryModule'
   }
 ]
 
