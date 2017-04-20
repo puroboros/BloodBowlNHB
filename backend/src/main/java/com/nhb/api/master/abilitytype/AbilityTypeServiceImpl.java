@@ -21,4 +21,9 @@ public class AbilityTypeServiceImpl implements AbilityTypeService{
 		return abilityTypeRepository.findOne(id);
 	}
 
+	@Override
+	public List<AbilityType> findByName(String name) {
+		return abilityTypeRepository.findByNameContainingIgnoreCase(name);
+	}
+
 }

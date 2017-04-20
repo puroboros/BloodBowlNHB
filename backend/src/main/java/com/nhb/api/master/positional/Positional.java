@@ -7,6 +7,7 @@ import org.springframework.data.mongodb.core.mapping.DBRef;
 
 import com.nhb.api.master.Stats;
 import com.nhb.api.master.ability.Ability;
+import com.nhb.api.master.abilitytype.AbilityType;
 import com.nhb.api.master.race.Race;
 
 public class Positional {
@@ -17,9 +18,9 @@ public class Positional {
 	private String name;
 	private Integer cost;
 	@DBRef
-	private List<Ability> normalAbilityTipes;
+	private List<AbilityType> normalAbilityTipes;
 	@DBRef
-	private List<Ability> doubleAbilityTipes;
+	private List<AbilityType> doubleAbilityTipes;
 	@DBRef
 	private List<Ability> baseAbilities;
 	private Stats stats;
@@ -47,16 +48,16 @@ public class Positional {
 	public void setCost(Integer cost) {
 		this.cost = cost;
 	}
-	public List<Ability> getNormalAbilityTipes() {
+	public List<AbilityType> getNormalAbilityTipes() {
 		return normalAbilityTipes;
 	}
-	public void setNormalAbilityTipes(List<Ability> normalAbilityTipes) {
+	public void setNormalAbilityTipes(List<AbilityType> normalAbilityTipes) {
 		this.normalAbilityTipes = normalAbilityTipes;
 	}
-	public List<Ability> getDoubleAbilityTipes() {
+	public List<AbilityType> getDoubleAbilityTipes() {
 		return doubleAbilityTipes;
 	}
-	public void setDoubleAbilityTipes(List<Ability> doubleAbilityTipes) {
+	public void setDoubleAbilityTipes(List<AbilityType> doubleAbilityTipes) {
 		this.doubleAbilityTipes = doubleAbilityTipes;
 	}
 	public List<Ability> getBaseAbilities() {

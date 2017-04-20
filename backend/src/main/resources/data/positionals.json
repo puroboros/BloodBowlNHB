@@ -1,0 +1,10 @@
+[
+	{
+		"name" : "amazon_line",
+		"cost" : 50,
+		"normalAbilityTipes":["general", "agility"],
+		"doubleAbilityTipes":["strength", "pass"],
+		"baseAbilities":["dodge"],
+		"stats":{"movement":6,"strength":3,"agility":3,"armor":7}
+	}
+]

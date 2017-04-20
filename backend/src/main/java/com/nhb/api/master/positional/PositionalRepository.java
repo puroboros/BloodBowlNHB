@@ -1,7 +1,7 @@
 package com.nhb.api.master.positional;
 
-import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.data.repository.PagingAndSortingRepository;
 
-public interface PositionalRepository extends MongoRepository<Positional, String>{
+public interface PositionalRepository extends PagingAndSortingRepository<Positional, String>{
 
 }

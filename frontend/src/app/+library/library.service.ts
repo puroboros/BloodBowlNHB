@@ -3,6 +3,7 @@ import { Observable } from 'rxjs/Rx';
 import { RestError } from '../models/rest-error';
 import { Http, Response, RequestOptionsArgs } from '@angular/http';
 import { Skill } from './skill';
+import { Page } from '../models/page';
 import { environment } from '../../environments/environment';
 @Injectable()
 export class LibraryService{
@@ -12,7 +13,7 @@ export class LibraryService{
 
     }
 
-    findAll(): Promise<Skill[]> {
+    findAll(): Promise<Page<Skill> > {
         return this.http.get(this.url)
             .map(this.extractData)
             .catch(this.handleError).toPromise();

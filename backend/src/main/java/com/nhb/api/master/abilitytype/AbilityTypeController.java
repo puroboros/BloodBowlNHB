@@ -23,4 +23,9 @@ public class AbilityTypeController {
 	public AbilityType findAbility(@PathVariable String id){
 		return abilityService.find(id);
 	}
+	
+	@RequestMapping(method = RequestMethod.GET, value="/find/{name:.+}")
+	public List<AbilityType> findByName(@PathVariable String name){
+		return abilityService.findByName(name);
+	}
 }

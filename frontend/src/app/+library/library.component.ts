@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { LibraryService } from './library.service';
 import { Skill } from './skill';
 @Component({
-    selector: 'library',
+    selector: 'nhb-library',
     templateUrl: './library.html',
     styleUrls: ['./library.css'],
     providers: [LibraryService]
@@ -15,14 +15,10 @@ export class LibraryComponent implements OnInit {
 
     ngOnInit() {
         this.libraryService.findAll().then(data => {
-            this.abilities = data;
+            this.abilities = data.content;
         }, error => {
             console.log("haha");
         });
 
     }
 }
-
-
-
-

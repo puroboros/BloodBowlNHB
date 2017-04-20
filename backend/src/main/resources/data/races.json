@@ -1,65 +1,107 @@
 [
 	{
-		"name":"amazon"
+		"name": "amazon",
+		"medic": true,
+		"reroll": 50
 	},
 	{
-		"name":"chaos"
+		"name": "chaos",
+		"medic": true,
+		"reroll": 60
 	},
 	{
-		"name":"chaos_dwarf"
+		"name": "chaos_dwarf",
+		"medic": true,
+		"reroll": 70
 	},
 	{
-		"name":"dark_elf"
+		"name": "dark_elf",
+		"medic": true,
+		"reroll": 50
 	},
 	{
-		"name":"dwarf"
+		"name": "dwarf",
+		"medic": true,
+		"reroll": 50
 	},
 	{
-		"name":"elf"
+		"name": "elf",
+		"medic": true,
+		"reroll": 60
 	},
 	{
-		"name":"goblin"
+		"name": "goblin",
+		"medic": true,
+		"reroll": 60
 	},
 	{
-		"name":"halfling"
+		"name": "halfling",
+		"medic": true,
+		"reroll": 60
 	},
 	{
-		"name":"high_elf"
+		"name": "high_elf",
+		"medic": true,
+		"reroll": 50
 	},
 	{
-		"name":"human"
+		"name": "human",
+		"medic": true,
+		"reroll": 50
 	},
 	{
-		"name":"khemri"
+		"name": "khemri",
+		"medic": false,
+		"reroll": 70
 	},
 	{
-		"name":"lizardman"
+		"name": "lizardman",
+		"medic": true,
+		"reroll": 60
 	},
 	{
-		"name":"necromantic"
+		"name": "necromantic",
+		"medic": false,
+		"reroll": 70
 	},
 	{
-		"name":"norse"
+		"name": "norse",
+		"medic": true,
+		"reroll": 50
 	},
 	{
-		"name":"nurgle"
+		"name": "nurgle",
+		"medic": false,
+		"reroll": 70
 	},
 	{
-		"name":"ogre"
+		"name": "ogre",
+		"medic": true,
+		"reroll": 70
 	},
 	{
-		"name":"orc"
+		"name": "orc",
+		"medic": true,
+		"reroll": 60
 	},
 	{
-		"name":"skaven"
+		"name": "skaven",
+		"medic": true,
+		"reroll": 60
 	},
 	{
-		"name":"undead"
+		"name": "undead",
+		"medic": false,
+		"reroll": 70
 	},
 	{
-		"name": "vampire"
+		"name": "vampire",
+		"medic": true,
+		"reroll": 70
 	},
 	{
-		"name":"wood_elf"
+		"name": "wood_elf",
+		"medic": true,
+		"reroll": 50
 	}
 ]
