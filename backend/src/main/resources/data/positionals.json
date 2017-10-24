@@ -2,9 +2,41 @@
 	{
 		"name" : "amazon_line",
 		"cost" : 50,
+		"normalAbilityTipes":["general"],
+		"doubleAbilityTipes":["strength", "pass", "agility"],
+		"baseAbilities":["dodge"],
+		"stats":{"movement":6,"strength":3,"agility":3,"armor":7}
+	},
+	{
+		"name" : "amazon_thrower",
+		"cost" : 70,
+		"normalAbilityTipes":["general", "pass"],
+		"doubleAbilityTipes":["strength", "agility"],
+		"baseAbilities":["dodge", "pass"],
+		"stats":{"movement":6,"strength":3,"agility":3,"armor":7}
+	},
+	{
+		"name" : "amazon_catcher",
+		"cost" : 70,
 		"normalAbilityTipes":["general", "agility"],
 		"doubleAbilityTipes":["strength", "pass"],
-		"baseAbilities":["dodge"],
+		"baseAbilities":["dodge", "catch"],
+		"stats":{"movement":6,"strength":3,"agility":3,"armor":7}
+	},
+	{
+		"name" : "amazon_blitzer",
+		"cost" : 90,
+		"normalAbilityTipes":["general", "strength"],
+		"doubleAbilityTipes":["agility", "pass"],
+		"baseAbilities":["dodge", "block"],
+		"stats":{"movement":6,"strength":3,"agility":3,"armor":7}
+	},
+	{
+		"name" : "beast_man",
+		"cost" : 60,
+		"normalAbilityTipes":["general", "strength"],
+		"doubleAbilityTipes":["agility", "pass"],
+		"baseAbilities":["dodge", "block"],
 		"stats":{"movement":6,"strength":3,"agility":3,"armor":7}
 	}
 ]

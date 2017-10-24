@@ -11,7 +11,6 @@ public class Race {
 	private String name;
 	private Integer rerollCost;
 	private Boolean medic;
-//	private Dictionary<String, Integer> positionals;
 	@DBRef
 	private Positional mercenary;
 	
